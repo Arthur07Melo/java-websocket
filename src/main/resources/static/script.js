@@ -5,6 +5,7 @@ var stompClient = null;
 document.addEventListener('DOMContentLoaded', function() {
     let nome = prompt("Digite seu nome: ", "Anônimo").trim();
     username = nome;
+    if(!nome) nome = "Anônimo"
     connect(nome);
 });
 
