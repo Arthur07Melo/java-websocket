@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function connect(username) {
     if(username) {
-        var socket = new SockJS('http://localhost:8080/ws');
+        var socket = new SockJS('/ws');
         stompClient = Stomp.over(socket);
 
         stompClient.connect({}, onConnected, onError);
