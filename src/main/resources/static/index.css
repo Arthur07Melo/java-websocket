@@ -36,6 +36,13 @@ main {
     margin-bottom: 5px;
 }
 
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 
 #message-input {
     background-color: #ccc;
@@ -84,6 +91,7 @@ button:hover {
         border-radius: 10px;
         display: flex;
         flex-direction: column;
+        font-size: small;
         gap: 8px;
     }
 
