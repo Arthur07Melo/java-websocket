@@ -75,4 +75,23 @@ button:hover {
     border-radius: 6px; /* Deixa as bordas arredondadas */
 }
 
-/* Estilo do "thumb" ao passar o mouse */
+
+@media (max-width:768px) {
+    .main-box {
+        width: 80%;
+        height: 90%;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #message-input {
+        background-color: #ccc;
+        padding: 8px;
+        width: 65%;
+        border-radius: 5px;
+        border: none;
+    }
+}
