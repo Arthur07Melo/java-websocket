@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #343434;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+.main-box {
+    background-color: #1c1c1c;
+    width: 50%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#chat-container {
+    border: 1px solid #ccc;
+    height: 86%; /* Altura desejada para a caixa de chat */
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical quando o conteúdo ultrapassa a altura */
+    padding: 10px;
+}
+
+.message {
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+
+#message-input {
+    background-color: #ccc;
+    padding: 8px;
+    width: 72%;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    color: white;
+    background-color: #676767;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    width: 22%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b4b4b;
+}
+
+/* Estilo geral da barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+/* Estilo do "track" (o fundo da barra de rolagem) */
+::-webkit-scrollbar-track {
+    background: #4b4b4b;
+}
+
+/* Estilo do "thumb" (a parte que você arrasta) */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px; /* Deixa as bordas arredondadas */
+}
+
+/* Estilo do "thumb" ao passar o mouse */
