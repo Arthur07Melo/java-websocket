@@ -57,9 +57,15 @@ function onError(error) {
     connectingElement.style.color = 'red';
 }
 
+let form = document.getElementById("form")
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede a recarga da página
+})
 
 function sendMessage(event) {
     const messageInput = document.getElementById('message-input');
+
+
     var messageContent = messageInput.value.trim();
     if(messageContent && stompClient) {
         var chatMessage = {
